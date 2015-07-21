@@ -3,7 +3,7 @@
 
 # Available strategies
 
-- Single Docker Daemon
+- The [Single Docker Daemon](single-docker-daemon/README.md)
 - Slave with Docker in Docker
 - No Slaves just master
 
