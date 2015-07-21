@@ -31,7 +31,6 @@
      <environment>
          <string>KUBERNETES_MASTER=${KUBERNETES_MASTER}</string>
          <string>KUBERNETES_TRUST_CERT=${KUBERNETES_TRUST_CERT}</string>
-         <string>SKIP_TLS_VERIFY=${SKIP_TLS_VERIFY}</string>
          <string>KUBERNETES_NAMESPACE=${KUBERNETES_NAMESPACE}</string>
          <string>DOCKER_REGISTRY_SERVICE_HOST=${DOCKER_REGISTRY_SERVICE_HOST}</string>
          <string>DOCKER_REGISTRY_SERVICE_PORT=${DOCKER_REGISTRY_SERVICE_PORT}</string>

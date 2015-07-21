@@ -30,4 +30,6 @@ EXPOSE 22
 ADD ./bin/wrapdocker /usr/local/bin/wrapdocker
 RUN chmod +x /usr/local/bin/wrapdocker
 
+ENV LOG=file
+
 CMD ["start-jenkins-slave.sh"]

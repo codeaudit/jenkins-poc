@@ -8,3 +8,8 @@ Jenkins with Slaves (Docker in Docker)
 	- Daemon not started
 	- Failure to gracefully stop (device is busy)
 
+
+### Notes
+
+- Make sure that the SKIP_TLS_VEIFY environmnet variables isn't forwarded to the dind slave (painful).
+
