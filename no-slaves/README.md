@@ -9,6 +9,13 @@ Using the docker binary and without the use of docker-plugin or any other cloud 
 - Master shares /var/jenkins_home/workspace volume with build steps.
 - Master uses its own executors to execute workflow steps.
 
+#### Pros
+- Simplest approach of all.
+- Minimal use of plugins (root of all evil).
+
+#### Cons
+- Builds may wait in queue (no infinite pool of resources).
+
 ### Usage
 
 To build the master and slave images:

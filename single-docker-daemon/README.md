@@ -9,6 +9,14 @@ Master mounts /var/run/docker.sock and exposes via http using socat.
 Master connects to slave via SSHD using the root:jenkins account.
 The slave reuses the docker socket and binary of the host.
 
+#### Pros
+- Maybe the simplest approach.
+
+
+#### Cons
+- Docker plugin is buggy.
+- May not work that great in a multi-node environment (no guarantee master and slave will be able to share data).
+
 ### Usage
 
 To build the master and slave images:

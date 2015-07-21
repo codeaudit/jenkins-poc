@@ -11,6 +11,17 @@ Each slave is starting its own docker daemon (docker in docker) and uses the int
 - Build steps are executed inside the slave's dedicated docker.
 - Slaves are handling the "bridge" between master and build steps using volumes.
 
+#### Pros
+- Each slave is totally isolated from each other.
+- Theoretical benefit of being able to replace docker-plugin, with kubernetes-plugin, jenkernetes and what-not.
+
+
+#### Cons
+- "Inception" style of thinking is complex to understand.
+- Each slave will download the internet (maybe need to keep slaves around).
+- Docker plugin is buggy.
+- The current docker version and docker-plugin requires hacky workarounds using lot of mounting.
+
 ### Usage
 
 To build the master and slave images:
