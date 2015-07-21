@@ -14,8 +14,8 @@ RUN mkdir -p /var/run/sshd
 # Install JDK 7 (latest edition)
 RUN apt-get install -y openjdk-7-jdk
 
-#RUN apt-get remove -y lxc-docker && \
-#    apt-get install -y lxc-docker-1.4.1
+RUN apt-get remove -y lxc-docker && \
+    apt-get install -y lxc-docker-1.6.1
 
 # Add user jenkins to the image
 # Set password for the jenkins user (you may want to alter this).

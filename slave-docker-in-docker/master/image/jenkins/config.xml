@@ -26,6 +26,7 @@
      <dnsHosts/>
      <volumes>
        <string>/home/jenkins/:/home/jenkins/</string>
+       <string>/dev:/dev</string>
      </volumes>
      <volumesFrom2/>
      <environment>
