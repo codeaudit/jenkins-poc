@@ -6,7 +6,7 @@
     <properties/>
     <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@1.8">
         <script>
-            node(&apos;docker&apos;) {
+            node(&apos;swarm&apos;) {
               docker.image(&apos;maven&apos;).inside {
                 git &apos;https://github.com/fabric8io/example-camel-cdi&apos;
                 sh &apos;mvn clean install&apos;
