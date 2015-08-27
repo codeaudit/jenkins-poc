@@ -103,6 +103,11 @@
                     "mountPath": "/var/run/docker.sock",
                     "name": "docker-socket",
                     "readOnly": false
+                  },
+                  {
+                    "mountPath": "/home/jenkins/",
+                    "name": "jenkis-home",
+                    "readOnly": false
                   }
                 ]
               }
@@ -120,6 +125,12 @@
                   "path": "/var/run/docker.sock"
                 },
                 "name": "docker-socket"
+              },
+              {
+                "hostPath": {
+                  "path": "/home/jenkins/"
+                },
+                "name": "jenkis-home"
               },
               {
                 "hostPath": {
@@ -195,6 +206,11 @@
                     "mountPath": "/var/run/docker.sock",
                     "name": "docker-socket",
                     "readOnly": false
+                  },
+                  {
+                    "mountPath": "/home/jenkins/",
+                    "name": "jenkis-home",
+                    "readOnly": false
                   }
                 ]
               }
@@ -212,6 +228,12 @@
                   "path": "/var/run/docker.sock"
                 },
                 "name": "docker-socket"
+              },
+              {
+                "hostPath": {
+                  "path": "/home/jenkins/"
+                },
+                "name": "jenkis-home"
               },
               {
                 "hostPath": {

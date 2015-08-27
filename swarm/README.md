@@ -41,4 +41,5 @@ To cleanup replication controllers and services:
 ### Notes
 
 - Failure to setup correctly the jenkins workspace volume will cause the build to hung forever.
+- The client image is using /workspace as workspace dir. Need to remember when configuring mounts.
 
