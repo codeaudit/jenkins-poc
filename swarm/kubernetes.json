@@ -90,11 +90,6 @@
                 },
                 "volumeMounts": [
                   {
-                    "mountPath": "/var/jenkins_home/workspace",
-                    "name": "jenkins-workspace",
-                    "readOnly": false
-                  },
-                  {
                     "mountPath": "/etc/secret-volume",
                     "name": "openshift-cert-secrets",
                     "readOnly": false
@@ -131,12 +126,6 @@
                   "path": "/home/jenkins/"
                 },
                 "name": "jenkis-home"
-              },
-              {
-                "hostPath": {
-                  "path": "/var/jenkins_home/workspace"
-                },
-                "name": "jenkins-workspace"
               }
             ]
           }

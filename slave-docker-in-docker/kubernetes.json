@@ -84,11 +84,6 @@
                     "readOnly": false
                   },
                   {
-                    "mountPath": "/etc/secret-volume",
-                    "name": "openshift-cert-secrets",
-                    "readOnly": false
-                  },
-                  {
                     "mountPath": "/home/jenkins/",
                     "name": "jenkis-home",
                     "readOnly": false
@@ -98,12 +93,6 @@
             ],
             "serviceAccount": "fabric8",
             "volumes": [
-              {
-                "name": "openshift-cert-secrets",
-                "secret": {
-                  "secretName": "openshift-cert-secrets"
-                }
-              },
               {
                 "hostPath": {
                   "path": "/home/jenkins/"
