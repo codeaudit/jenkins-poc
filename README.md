@@ -9,3 +9,6 @@
 - [Swarm](swarm/README.md)
 - [Swarm with Docker in Docker](swarm-docker-in-docker/README.md)
 
+# Great reads:
+
+- http://www.jayway.com/2015/03/14/docker-in-docker-with-jenkins-and-supervisord/
