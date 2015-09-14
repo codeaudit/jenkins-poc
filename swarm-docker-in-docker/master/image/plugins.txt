@@ -18,7 +18,7 @@ cvs:2.12
 delivery-pipeline-plugin:0.8.11
 docker-commons:1.0
 docker-plugin:0.9.3
-docker-workflow:1.0
+docker-workflow:1.2
 durable-task:1.5
 embeddable-build-status:1.7
 envinject:1.91.2

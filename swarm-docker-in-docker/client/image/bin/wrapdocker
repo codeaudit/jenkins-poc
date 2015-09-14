@@ -1,6 +1,9 @@
 #!/bin/bash
 
 # Ensure that all nodes in /dev/mapper correspond to mapped devices currently loaded by the device-mapper kernel driver
+dmsetup remove_all
+/usr/local/bin/checkloop
+
 dmsetup mknodes
 
 # First, make sure that cgroups are mounted correctly.
